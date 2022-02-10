@@ -1,0 +1,142 @@
+@font-face{
+  font-family: 'Alice';
+  src: url('../fonts/Alice.woff');
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alice';
+  font-size: 22px;
+}
+
+.my-pic{
+  display: block;
+  max-width: 200px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+body{
+  background-color: #a86f36;
+  background-image: url('../images/background-image.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+nav{
+  position: static;
+  background-color: rgb(255, 93, 21);
+  background-color: rgba(255, 93, 21, 0.7);
+  line-height: 30px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-sub-list a{
+  font-size: 16px;
+  color: rgb(252, 202, 101);
+  border-left: 2px white solid;
+  border-right: 2px white solid;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+nav a:hover{
+  color: lightgrey;
+}
+
+.nav-sub-list a:hover{
+  color: darkgrey;
+}
+
+a[href='#']{
+  color: yellow;
+}
+
+
+article{
+  margin: 50px 50px;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid darkred;
+  border-radius: 10px;
+}
+
+article p, article li{
+  font-family: serif;
+}
+
+article p, article li, h1{
+  margin-bottom: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+  .nav-main-list{
+    position: fixed; /* Solo da pc*/
+    top: 0; /* Solo da pc*/
+    left: 0; /* Solo da pc*/
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(255, 93, 21);
+    background-color: rgba(255, 93, 21, 0.7);
+  }
+  .nav-main-list > li{
+    display: inline;
+  }
+  .nav-sub-list{
+    display: none;
+    padding: 50px 20px 10px 20px;
+    border-radius: 10px;
+  }
+  .nav-sub-list li{
+    border-bottom: dotted 3px white;
+    padding: 10px;
+  }
+  .nav-sub-list li:last-of-type{
+    border-bottom: none;
+  }
+  .nav-sub-list a{
+    font-size: 18px;
+    border: none;
+  }
+  .dropdown{
+    position: relative; /* Reference for nav-sub-list*/
+  }
+  .dropdown > span{
+    z-index: 2;
+    position: relative;
+  }
+
+  .dropdown:hover .nav-sub-list{
+    display: flex;
+    background-color: rgb(255, 93, 21);
+    flex-direction: column;
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    list-style-type: none;
+  }
+
+  article{
+    max-width: 500px;
+    margin: 150px auto;
+  }
+
+}
