@@ -1,0 +1,33 @@
+h1{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: normal;
+}
+
+h1:first-of-type{
+  margin-top: 20px;
+}
+
+article ul li{
+  margin-left: 50px;
+  list-style-type: square;
+}
+
+.comment{
+  color: rgb(181, 66, 14);
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.skills-sub-list li{
+  font-size: 18px;
+  margin-left: 50px;
+  list-style-type: '- ';
+}
+
+.skills-sub-list li:first-of-type{
+  margin-top: 15px;
+}

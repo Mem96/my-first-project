@@ -1,0 +1,53 @@
+@font-face{
+  font-family: 'Droid';
+  src: url('../fonts/DroidSerif-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Droid';
+  src: url('../fonts/DroidSerif-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Droid';
+  src: url('../fonts/DroidSerif-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+figure{
+  padding: 40px;
+}
+figcaption, cite{
+  font-family: 'Droid';
+  font-size: 18px;
+}
+
+button{
+  background-color: rgb(255, 93, 21);
+  padding: 15px;
+  width: 300px;
+  display: block;
+  margin: 30px auto;
+  border: 3px solid rgb(61, 40, 18);
+  border-radius: 5px;
+  box-shadow: -3px 3px rgb(61, 40, 18);
+}
+button a{
+  color: white;
+  text-decoration: none;
+}
+button:hover{
+  background-color: rgb(181, 66, 14);
+}
+
+button a:active{
+  color: yellow;
+}
+
+article li{
+  list-style-type: square;
+  margin-left: 50px;
+}
