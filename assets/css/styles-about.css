@@ -17,37 +17,47 @@
   font-style: italic;
 }
 
-figure{
-  padding: 40px;
-}
 figcaption, cite{
   font-family: 'Droid';
   font-size: 18px;
 }
 
+figure{
+  padding-bottom: 30px;
+}
+
+article a{
+  text-decoration: none;
+}
+
 button{
   background-color: rgb(255, 93, 21);
   padding: 15px;
-  width: 300px;
+  width: 200px;
   display: block;
   margin: 30px auto;
   border: 3px solid rgb(61, 40, 18);
   border-radius: 5px;
   box-shadow: -3px 3px rgb(61, 40, 18);
-}
-button a{
+  cursor: pointer;
   color: white;
-  text-decoration: none;
 }
+
 button:hover{
   background-color: rgb(181, 66, 14);
 }
-
-button a:active{
+button:active{
   color: yellow;
 }
 
 article li{
   list-style-type: square;
   margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media only screen and (min-width: 600px){
+  figure{
+    padding: 20px 40px 40px 40px;
+  }
 }

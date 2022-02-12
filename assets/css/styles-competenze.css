@@ -11,23 +11,85 @@ h1:first-of-type{
   margin-top: 20px;
 }
 
+.html{
+  background-image: url('../images/icons8-html-5-64.png');
+}
+.css{
+  background-image: url('../images/icons8-css3-64.png');
+}
+.python{
+  background-image: url('../images/icons8-python-64.png')
+}
+
+.italian{
+  background-image: url('../images/icons8-italy.png')
+}
+.spanish{
+  background-image: url('../images/icons8-spain.png')
+}
+.german{
+  background-image: url('../images/icons8-germany.png')
+}
+.english{
+  background-image: url('../images/icons8-great-britain.png')
+}
+
+.time{
+  background-image: url('../images/time-icons8.png')
+}
+.handshake{
+  background-image: url('../images/hands-icons8.png')
+}
+.learning{
+  background-image: url('../images/learning-icons8.png')
+}
+
 article ul li{
-  margin-left: 50px;
+  margin-left: 30px;
+  list-style-type: none;
+  padding-left: 50px;
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.italian, .german, .spanish, .english{
   list-style-type: square;
+  list-style-position: inside;
+  background-position: right;
+  padding-left: 0;
+}
+
+.skills-sub-list li{
+  font-size: 16px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 0;
+  list-style-type: square; !important
+  list-style-position: inside;
+}
+
+.skills-sub-list li:first-of-type{
+  margin-top: 15px;
 }
 
 .comment{
+  margin-left: 30px;
+  margin-right: 30px;
   color: rgb(181, 66, 14);
   list-style-type: none;
   font-size: 18px;
 }
 
-.skills-sub-list li{
-  font-size: 18px;
-  margin-left: 50px;
-  list-style-type: '- ';
-}
-
-.skills-sub-list li:first-of-type{
-  margin-top: 15px;
+@media only screen and (max-width: 600px){
+  .time, .handshake, .learning{
+    list-style-type: square;
+    background-image: none;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 0;
+  }
 }
