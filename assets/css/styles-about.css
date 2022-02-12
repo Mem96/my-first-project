@@ -30,6 +30,13 @@ article a{
   text-decoration: none;
 }
 
+.link-exception{
+  text-decoration: underline;
+}
+.link-exception:hover{
+  color: white;
+}
+
 button{
   background-color: rgb(255, 93, 21);
   padding: 15px;
